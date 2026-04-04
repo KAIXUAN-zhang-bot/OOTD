@@ -22,9 +22,12 @@ jobs:
 
     - name: Build Debug APK
       working-directory: ./android
+      env:
+        JAVA_OPTS: "-Xmx2048m"
+        GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx2048m -Dorg.gradle.daemon=false"
       run: |
         chmod +x gradlew
-        ./gradlew assembleDebug
+        ./gradlew assembleDebug --no-daemon
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
