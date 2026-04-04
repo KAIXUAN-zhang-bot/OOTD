@@ -1,0 +1,46 @@
+# Gradle files
+.gradle/
+build/
+*.gradle
+!gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Android Gradle
+app/build/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+*~
+
+# Local properties
+local.properties
+settings_local.gradle
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Kotlin
+*.kt.bak
+
+# Build
+bin/
+gen/
+out/
+.classpath
+.project
+.settings
+
+# Crashlytics
+crashlytics.properties
+crashlytics-build.properties
